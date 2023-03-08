@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Zach White</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="img/sadfrog.ico" rel="shortcut icon">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet">
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/plugins.min.js"></script>
+</head>
+
+<body>
+	<div id="overlay">
+        <div class="centered">Click to Enter</div>
+    </div>
+	<div id="background" class="background">
+        <video id="play" loop src="vid/Last.Life.In.The.Universe.2003.m4v"></video>
+		<img src="https://2no.co/11trJ.png" alt="safsdg">
+    </div>
+	<script>
+        $("#overlay").click(function() {
+            $("#overlay").addClass("hidden");
+            var video = $("#play")[0];
+            video.play();
+        });
+    </script>
+	<div class="video mask overlay" id="star">
+		<!--<i class="volume-button fa fa-volume-up"></i>-->
+		<div class="video-fallback"></div>
+        <canvas class="cover"></canvas>
+	</div>
+	<div class="pageoverlay">
+		<div class="lightbox">
+			<div class="awrapper">
+				<div class="titles fadeInDown">
+					<h1>Zach White</h1>
+				</div>
+				<!--<div class="media fadeInUp">
+					<a href="http://steamcommunity.com/id/PressF5/" title="Steam" id="steam" target="_blank"><i class="fa fa-steam"></i></a>
+					<a href="https://vk.com/zachwhite" title="VK" id="vk" target="_blank"><i class="fa fa-vk"></i></a>
+					<a href="https://twitter.com/NpcZach" title="Twitter" id="Twitter" target="_blank"><i class="fa fa-twitter "></i></a>
+				</div>-->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
