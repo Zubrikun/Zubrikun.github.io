@@ -23,10 +23,12 @@
 		<img src="https://2no.co/11trJ.png" alt="safsdg">
     </div>
 	<script>
-        $("#overlay").click(function() {
-            $("#overlay").addClass("hidden");
-            var video = $("#play")[0];
-            video.play();
+        $(document).ready(function(){
+            $("#overlay").click(function() {
+                $("#overlay").addClass("hidden");
+                var video = $("#play")[0];
+                video.play();
+            });
         });
     </script>
 	<div class="video mask overlay" id="star">
